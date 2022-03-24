@@ -17,11 +17,22 @@ let app = new Vue(
                                 return self.newMail=newMail;
                             })
                     }
-            }
+            },
+            
         },
-        // Updated per verifica dati e test funzioni
-        updated(){
-        }
+        // Versione senza pulsante e con created()
+        // created(){
+        //     const self = this;
+        //     for (let i = 0 ; i< 10 ; i++){
+
+        //         axios.get(`https://flynn.boolean.careers/exercises/api/random/mail`)
+        //             .then(function (answer){
+        //                 const newMail = answer.data.response
+        //                 self.mailList.push(newMail)
+        //                 return self.newMail=newMail;
+        //             })
+        //     }            
+        // }
     }
 )
 
